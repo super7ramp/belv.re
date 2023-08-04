@@ -26,7 +26,7 @@ body {
 
 @keyframes rotation {
   50% {
-    color: red;
+    color: yellow;
     transform: rotate(0.5turn);
   }
   100% {
