@@ -1,0 +1,36 @@
+@media (prefers-color-scheme: dark) {
+  * {
+    color-scheme: dark;
+  }
+}
+
+body {
+  font-family: monospace;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#sunflower {
+  width: 200px;
+  height: 200px;
+}
+
+:hover > .i {
+  display: inline-block;
+  animation-name: rotation;
+  animation-duration: 2s;
+}
+
+@keyframes rotation {
+  50% {
+    color: red;
+    transform: rotate(0.5turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
