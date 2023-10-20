@@ -1,17 +1,4 @@
-@media (prefers-color-scheme: dark) {
-  * {
-    color-scheme: dark;
-  }
-}
-
-body {
-  font-family: monospace;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+@import url("common/common.css");
 
 #sunflower {
   width: 200px;
