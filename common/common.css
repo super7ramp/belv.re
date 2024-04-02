@@ -5,11 +5,19 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
   font-family: monospace;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  min-height: 97vh;
+  max-width: 800px;
+  text-align: justify;
 }
 
