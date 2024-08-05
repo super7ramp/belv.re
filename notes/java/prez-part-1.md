@@ -76,18 +76,18 @@ Et c'est à peu près tout !
 
 | Nom     | Qu'est-ce que c'est ?                            |
 |---------|--------------------------------------------------|
-|`=`      | L'assignation                               |
-|`==`     | Le test d'égalité                               |
-|`+`      | Tu le sais                               |
-|`-`      | Celui là aussi                 |
-|`*`      | Encore un            |
-|`/`      | Décidément          |
-|`^`      | La puissance          |
-| `%`     | Le modulo |
-|`\|\|`   | Le "ou"       |
-|`&&`     | Le "et"                   |
+|`=`      | L'assignation                                    |
+|`==`     | Le test d'égalité                                |
+|`+`      | Tu le sais                                       |
+|`-`      | Celui là aussi                                   |
+|`*`      | Encore un                                        |
+|`/`      | Décidément                                       |
+| `%`     | Le modulo                                        |
+|`\|\|`   | Le "ou"                                          |
+|`&&`     | Le "et"                                          |
 
 Note : à la différence d'autres langages, ces opérateurs ne marchent que pour les types primitifs, à l'exception de `=` et `==` (et du `+`, pour le type `String` que l'on verra plus tard).
+
 
 ---
 
