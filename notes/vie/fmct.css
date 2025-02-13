@@ -1,0 +1,52 @@
+.stop:not(:active) ~ .carousel {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.stop:not(:active) ~ .carousel p:nth-child(1) {
+    animation: move-around 21s infinite step-end, fade-in-fade-out 7s infinite linear;
+    grid-area: 1/1;
+}
+
+.stop:not(:active) ~ .carousel p:nth-child(2) {
+    animation: move-around 21s infinite 7s step-end, fade-in-fade-out 7s infinite linear;
+    grid-area: 2/1;
+}
+
+.stop:not(:active) ~ .carousel p:nth-child(3) {
+    animation: move-around 21s infinite 14s step-end, fade-in-fade-out 7s infinite linear;
+    grid-area: 3/1;
+}
+
+@keyframes move-around {
+    0% {
+        grid-area: 1/1;
+    }
+    33% {
+        grid-area: 2/1;
+    }
+    66% {
+        grid-area: 3/1;
+    }
+}
+
+@keyframes fade-in-fade-out {
+    0% {
+        opacity: 0;
+    }
+    3% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    97% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
