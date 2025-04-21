@@ -1,27 +1,27 @@
 @media (prefers-color-scheme: dark) {
-  * {
-    color-scheme: dark;
-  }
+    * {
+        color-scheme: dark;
+    }
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-  font-family: monospace;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 97vh;
-  max-width: 800px;
-  text-align: justify;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 97vh;
+    max-width: 800px;
+    text-align: justify;
 }
 
 .poem {
-  text-align: center;
-  white-space: pre-line;
+    text-align: center;
+    white-space: pre-line;
 }
