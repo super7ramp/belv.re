@@ -7,19 +7,27 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 0 20px;
+    font-family: monospace;
+    line-height: 1.4;
+    text-align: justify;
 }
 
 main {
-    font-family: monospace;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    max-width: 800px;
-    text-align: justify;
+    max-width: 650px;
+}
+
+article footer {
+    text-align: right;
+}
+
+article h1 {
+    text-align: center;
 }
 
 .poem {
