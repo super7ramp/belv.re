@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 20px;
 }
 
 main {
@@ -16,7 +17,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 97vh;
+    min-height: 100vh;
     max-width: 800px;
     text-align: justify;
 }
