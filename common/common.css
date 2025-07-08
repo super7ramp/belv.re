@@ -9,8 +9,13 @@ body {
     justify-content: center;
     margin: 0 20px;
     font-family: monospace;
-    line-height: 1.4;
+    line-height: 1.6;
+    font-size: 1.2rem;
     text-align: justify;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
 }
 
 main {
@@ -19,7 +24,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    max-width: 650px;
+    max-width: 40rem;
 }
 
 article footer {
