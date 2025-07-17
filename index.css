@@ -1,25 +1,49 @@
 @import url("common/common.css");
 
 #sunflower {
-  width: 200px;
-  height: 200px;
-  padding: 0.25rem;
-  border: solid 0.25rem var(--primary-color);
+    width: 12rem;
+    height: 12rem;
+    padding: var(--spacing-050);
+    border: solid var(--spacing-050) var(--primary-color);
 }
 
-:hover > .i {
-  display: inline-block;
-  animation-name: rotation;
-  animation-duration: 2s;
+.dont-break-me {
+    text-wrap: nowrap;
+}
+
+:active > .rolling-i {
+    display: inline-block;
+    animation-name: rotation;
+    animation-duration: 2s;
 }
 
 @keyframes rotation {
-  50% {
-    color: yellow;
-    transform: rotate(0.5turn);
-  }
-  100% {
-    transform: rotate(1turn);
-  }
+    50% {
+        color: yellow;
+        transform: rotate(0.5turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
 }
 
+.links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-200);
+}
+
+@media (max-width: 25rem /* 400px */) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.links li {
+    padding: 0;
+}

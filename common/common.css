@@ -2,6 +2,10 @@
     color-scheme: light dark;
     --primary-color: black;
     --link-visited-color: darkslategray;
+
+    --spacing-050: calc(var(--spacing-100) / 2);
+    --spacing-100: 0.5rem;
+    --spacing-200: calc(var(--spacing-100) * 2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,7 +18,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0 20px;
+    margin: 0;
     font-family: monospace;
     line-height: 1.6;
     font-size: 1.2rem;
@@ -27,7 +31,9 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    width: 100%;
     max-width: 40rem;
+    padding: var(--spacing-200);
 }
 
 article footer {
@@ -52,18 +58,16 @@ ul {
 }
 
 li {
-    padding-left: 0.5rem;
+    padding-left: var(--spacing-100);
 }
 
 a {
     color: inherit;
-    text-underline-offset: 0.25rem;
-    text-align-last: right;
+    text-underline-offset: var(--spacing-050);
 }
 
 a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 0.25rem;
+    text-decoration-thickness: var(--spacing-050);
 }
 
 a:visited {
