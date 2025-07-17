@@ -48,12 +48,11 @@ h1, h2, h3 {
 }
 
 ul {
-    list-style: none;
+    list-style-type: "﹅";
 }
 
-li::before {
-    content: "...";
-    padding-right: 0.5rem;
+li {
+    padding-left: 0.5rem;
 }
 
 a {
