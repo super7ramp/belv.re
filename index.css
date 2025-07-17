@@ -3,6 +3,8 @@
 #sunflower {
   width: 200px;
   height: 200px;
+  padding: 0.25rem;
+  border: solid 0.25rem var(--primary-color);
 }
 
 :hover > .i {

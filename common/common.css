@@ -1,6 +1,13 @@
+:root {
+    color-scheme: light dark;
+    --primary-color: black;
+    --link-visited-color: darkslategray;
+}
+
 @media (prefers-color-scheme: dark) {
-    * {
-        color-scheme: dark;
+    :root {
+        --primary-color: white;
+        --link-visited-color: lightgray;
     }
 }
 
@@ -12,14 +19,6 @@ body {
     line-height: 1.6;
     font-size: 1.2rem;
     text-align: justify;
-}
-
-h1 {
-    text-align: center;
-}
-
-h1, h2, h3 {
-    line-height: 1.2;
 }
 
 main {
@@ -38,4 +37,36 @@ article footer {
 .poem {
     text-align: center;
     white-space: pre-line;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+ul {
+    list-style: none;
+}
+
+li::before {
+    content: "...";
+    padding-right: 0.5rem;
+}
+
+a {
+    color: inherit;
+    text-underline-offset: 0.25rem;
+    text-align-last: right;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.25rem;
+}
+
+a:visited {
+    color: var(--link-visited-color);
 }
