@@ -11,20 +11,14 @@
     text-wrap: nowrap;
 }
 
-:active > .rolling-i {
+.rolling-i {
     display: inline-block;
-    animation-name: rotation;
-    animation-duration: 2s;
+    transition: transform 1.5s, color 1.5s;
 }
 
-@keyframes rotation {
-    50% {
-        color: yellow;
-        transform: rotate(0.5turn);
-    }
-    100% {
-        transform: rotate(1turn);
-    }
+:active > .rolling-i {
+    transform: rotate(1turn);
+    color: yellow;
 }
 
 .links {
