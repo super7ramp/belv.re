@@ -7,6 +7,10 @@
     border: solid var(--spacing-050) var(--primary-color);
 }
 
+#sunflower:active {
+    scale: 97%;
+}
+
 .dont-break-me {
     text-wrap: nowrap;
 }
@@ -16,7 +20,7 @@
     transition: transform 1.5s, color 1.5s;
 }
 
-:active > .rolling-i {
+#sunflower:active ~ h1 .rolling-i {
     transform: rotate(1turn);
     color: yellow;
 }
