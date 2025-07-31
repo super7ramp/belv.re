@@ -44,11 +44,6 @@ article footer {
     text-align: right;
 }
 
-.poem {
-    text-align: center;
-    white-space: pre-line;
-}
-
 h1 {
     text-align: center;
 }
@@ -76,4 +71,9 @@ a:hover {
 
 a:visited {
     color: var(--link-visited-color);
+}
+
+.poem {
+    text-align: center;
+    white-space: pre-line;
 }
