@@ -22,7 +22,7 @@
 
 #sunflower:active ~ h1 .rolling-i {
     transform: rotate(1turn);
-    color: yellow;
+    color: gold;
 }
 
 .links {
