@@ -21,12 +21,14 @@
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     font-family: monospace;
     line-height: 1.6;
     font-size: 1.2rem;
     text-align: justify;
+    min-height: 100vh;
 }
 
 main {
@@ -34,14 +36,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    flex-grow: 1;
     width: 100%;
     max-width: 40rem;
     padding: var(--spacing-200);
-}
-
-article footer {
-    text-align: right;
 }
 
 h1 {
@@ -71,6 +69,41 @@ a:hover {
 
 a:visited {
     color: var(--link-visited-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav {
+    border-top: solid 1px var(--primary-color);
+    font-size: 0.8rem;
+    padding: var(--spacing-100);
+}
+
+article footer {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.breadcrumbs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.breadcrumbs li {
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.breadcrumbs li:not(:first-of-type)::before {
+    content: "/";
+    padding: 0 1ch;
 }
 
 .poem {
