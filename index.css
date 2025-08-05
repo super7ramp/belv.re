@@ -5,6 +5,8 @@
     height: 12rem;
     padding: var(--spacing-050);
     border: solid var(--spacing-050) var(--primary-color);
+    /* on iOS, prevent long press from opening context menu which would mask the rolling-i animation */
+    -webkit-touch-callout: none;
 }
 
 #sunflower:active {
