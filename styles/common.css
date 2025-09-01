@@ -71,6 +71,18 @@ a:visited {
     color: var(--link-visited-color);
 }
 
+blockquote p:first-of-type::before {
+    content: "«";
+}
+
+blockquote p:last-of-type::after {
+    content: "»";
+}
+
+blockquote + p {
+    text-align: right;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -80,11 +92,6 @@ footer nav {
     border-top: solid 1px var(--primary-color);
     font-size: 0.8rem;
     padding: var(--spacing-100);
-}
-
-article footer {
-    text-align: right;
-    justify-content: flex-end;
 }
 
 .breadcrumbs {
