@@ -51,7 +51,7 @@ h1, h2, h3 {
 }
 
 ul {
-    list-style-type: "﹅";
+    list-style-type: square;
 }
 
 li {
