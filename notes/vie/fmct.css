@@ -1,32 +1,63 @@
-.stop:not(:active) ~ .carousel {
+.player {
+    margin-block-end: var(--spacing-300);
+}
+
+.player:active {
+    scale: 0.97;
+}
+
+.player::before {
+    content: "⏵ animer";
+    font-size: 1rem;
+    border: solid 1px var(--primary-color);
+    border-radius: var(--spacing-050);
+    padding: var(--spacing-050);
+}
+
+.player:has(.play:checked)::before {
+    content: "⏹ stop";
+}
+
+.play {
+    appearance: none;
+}
+
+.carousel {
+    --total-stanzas: 3;
+    --interval: 14s;
+    --total-duration: calc(var(--total-stanzas) * var(--interval));
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(var(--total-stanzas), 1fr);
 }
 
-.stop:not(:active) ~ .carousel p:nth-child(1) {
-    animation: move-around 21s infinite step-end, fade-in-fade-out 7s infinite linear;
-    grid-area: 1/1;
+.stanza {
+    --move-around-delay: 0s;
+    animation:
+        move-around var(--total-duration) infinite var(--move-around-delay) step-end,
+        fade-in-fade-out var(--interval) infinite linear;
 }
 
-.stop:not(:active) ~ .carousel p:nth-child(2) {
-    animation: move-around 21s infinite 7s step-end, fade-in-fade-out 7s infinite linear;
-    grid-area: 2/1;
+.player:has(.play:not(:checked)) ~ .carousel .stanza {
+    animation: none;
 }
 
-.stop:not(:active) ~ .carousel p:nth-child(3) {
-    animation: move-around 21s infinite 14s step-end, fade-in-fade-out 7s infinite linear;
-    grid-area: 3/1;
+.stanza:nth-child(2) {
+    --move-around-delay: var(--interval);
+}
+
+.stanza:nth-child(3) {
+    --move-around-delay: calc(2 * var(--interval));
 }
 
 @keyframes move-around {
     0% {
-        grid-area: 1/1;
+        grid-row: 1;
     }
     33% {
-        grid-area: 2/1;
+        grid-row: 3;
     }
     66% {
-        grid-area: 3/1;
+        grid-row: 2;
     }
 }
 
