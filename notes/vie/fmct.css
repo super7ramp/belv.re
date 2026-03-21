@@ -1,4 +1,8 @@
 .player {
+    font-size: 1rem;
+    border: solid 1px var(--primary-color);
+    border-radius: var(--spacing-050);
+    padding: var(--spacing-050);
     margin-block-end: var(--spacing-300);
 }
 
@@ -6,21 +10,13 @@
     scale: 0.97;
 }
 
-.player::before {
-    content: "⏵ animer";
-    font-size: 1rem;
-    border: solid 1px var(--primary-color);
-    border-radius: var(--spacing-050);
-    padding: var(--spacing-050);
+.player:focus-within {
+    outline: solid 1px;
 }
 
-.player:has(.play:checked)::before {
-    content: "⏹ stop";
-}
-
-.play {
-    appearance: none;
-    margin: 0;
+.play:checked ~ .label-stopped,
+.play:not(:checked) ~ .label-playing {
+    display: none;
 }
 
 .carousel {

@@ -11,7 +11,11 @@
 <body>
 <main>
     <h1>Fuis, manque, cherche, trompe</h1>
-    <label class="player"><input type="checkbox" class="play"/></label>
+    <label class="player">
+        <input type="checkbox" class="play visually-hidden"/><!--
+     --><span class="label-stopped">⏵ animer</span><!--
+     --><span class="label-playing">⏹ stop</span>
+    </label>
     <div class="carousel">
         <p class="poem stanza"><!--
          -->Manque de vie
