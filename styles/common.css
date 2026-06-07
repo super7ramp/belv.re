@@ -72,6 +72,12 @@ a:visited {
     color: var(--link-visited-color);
 }
 
+blockquote {
+    margin: 0;
+    padding-inline: var(--spacing-300);
+    border: 0.4ch dashed var(--primary-color);
+}
+
 blockquote p:first-of-type::before {
     content: "« ";
 }
