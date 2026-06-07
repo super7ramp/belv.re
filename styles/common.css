@@ -73,11 +73,11 @@ a:visited {
 }
 
 blockquote p:first-of-type::before {
-    content: "«";
+    content: "« ";
 }
 
 blockquote p:last-of-type::after {
-    content: "»";
+    content: " »";
 }
 
 blockquote + p {
@@ -115,14 +115,6 @@ footer nav {
 .poem {
     text-align: center;
     white-space: pre-line;
-}
-
-blockquote .poem:first-of-type::before {
-    content: "« ";
-}
-
-blockquote .poem:last-of-type::after {
-    content: " »";
 }
 
 .visually-hidden {
