@@ -75,7 +75,7 @@ a:visited {
 blockquote {
     margin: 0;
     padding-inline: var(--spacing-300);
-    border: 0.4ch dashed var(--primary-color);
+    border: 0.2rem dashed var(--primary-color);
 }
 
 blockquote p:first-of-type::before {
