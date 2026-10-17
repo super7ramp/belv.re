@@ -43,20 +43,9 @@ main {
     padding: var(--spacing-200);
 }
 
-h1 {
-    text-align: center;
-}
-
 h1, h2, h3 {
+    text-align: center;
     line-height: 1.2;
-}
-
-ul {
-    list-style-type: square;
-}
-
-li {
-    padding-left: var(--spacing-100);
 }
 
 a {
@@ -101,6 +90,21 @@ footer nav {
     padding: var(--spacing-100);
 }
 
+.bag {
+    padding: 0;
+    text-align: center;
+    text-wrap: balance;
+    line-height: 2;
+}
+
+.bag li {
+    display: inline;
+}
+
+.bag li + li::before {
+    content: "・ " / "";
+}
+
 .breadcrumbs {
     list-style-type: none;
     padding: 0;
@@ -113,8 +117,8 @@ footer nav {
     white-space: nowrap;
 }
 
-.breadcrumbs li:not(:first-of-type)::before {
-    content: "/";
+.breadcrumbs li + li::before {
+    content: "/" / "";
     padding: 0 1ch;
 }
 
